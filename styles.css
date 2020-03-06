@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container-insert {
+    background: lightgray;
+    padding: 20px;
+    /* min-height: 60vh; */
+    text-align: center;
+    /* min-width: 500px; */
+    box-shadow: 5px 5px 18px;
+    /* transform: rotate(7deg); */
+    border-radius: 10px;
+}
+
+.insert {
+    /* background: lightskyblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+}
