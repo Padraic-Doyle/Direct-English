@@ -25,52 +25,50 @@
 
     <h1>Welcome to Direct English</h1>
 
-    <a href="class.html">Go to lesson</a>
+    <a href="lesson.html">Go to lesson</a>
 
-    <div class="container-insert">
+
+    <!-- ********************Grammar Point************************************** -->
+
+    <div class="container gp-container">
         <form class="insert">
-            <h3>Insert Grammar Point</h3>
+            <h3>Grammar Point</h3>
+
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="grammar-point-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
             <div class="field">
                 <label for="grammar-point">Grammar Point: </label>
                 <select name="grammar-point" id="grammar-point">
-            <option value="present-simple">Present Simple</option>
-            <option value="present-continous">Present Continous</option>
-            <option value="past-simple">Past Simple</option>
-            <option value="past-continous">Past Continous</option>
-            <option value="present-perfect">Present Perfect</option>
-            <option value="present-perfect-continous"
-              >Present Perfect Continous</option
-            >
-            <option value="past-perfect">Past Perfect</option>
-            <option value="past-perfect-continous"
-              >Past Perfect Continous</option
-            >
-            <option value="future-will">Future with will</option>
-            <option value="future-going-to">Future with going to</option>
-            <option value="future-continous">Future Continous</option>
-            <option value="future-perfect">Future Perfect</option>
-            <option value="simple-conditional">Simple Conditional</option>
-            <option value="continous-conditional">Continous Conditional</option>
-            <option value="perfect-conditional">Perfect Conditional</option>
-            <option value="perfect-continous-conditional"
-              >Perfect Future Continous</option
-            >
-          </select>
-            </div>
-            <div class="field">
-                <label for="grammar-point">Level: </label>
-                <select name="level" id="level">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
+                    <option value="present-simple">Present Simple</option>
+                    <option value="present-continous">Present Continous</option>
+                    <option value="past-simple">Past Simple</option>
+                    <option value="past-continous">Past Continous</option>
+                    <option value="present-perfect">Present Perfect</option>
+                    <option value="present-perfect-continous">Present Perfect Continous</option>
+                    <option value="past-perfect">Past Perfect</option>
+                    <option value="past-perfect-continous">Past Perfect Continous</option>
+                    <option value="future-will">Future with will</option>
+                    <option value="future-going-to">Future with going to</option>
+                    <option value="future-continous">Future Continous</option>
+                    <option value="future-perfect">Future Perfect</option>
+                    <option value="simple-conditional">Simple Conditional</option>
+                    <option value="continous-conditional">Continous Conditional</option>
+                    <option value="perfect-conditional">Perfect Conditional</option>
+                    <option value="perfect-continous-conditional">Perfect Future Continous</option>
+                </select>
             </div>
             <div class="field">
                 <label for="qusetion">Question:</label>
@@ -80,64 +78,362 @@
                 <label for="answer">Answer: </label>
                 <input type="text" name="answer" id="answer" />
             </div>
-            <button id="submit-btn">Submit</button>
+            <div class="field">
+                <button id="submit-btn">Submit</button>
+            </div>
+
         </form>
     </div>
-    <hr />
-
-    <h1>Lesson</h1>
+    <br>
 
 
-    <div class="lesson-container container-insert">
-        <div class="lesson">
+    <!-- ********************Phrasal Verb************************************** -->
+    <div class="container pv-container">
+        <form action="" class="insert">
+            <h3>Phrasal Verb</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="pv-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="phrasal-verb">Phrasal Verb:</label>
+                <input type="text" name="parasal-verb" id="phrasal-verb">
+            </div>
+            <div class="field">
+                <label for="example">Example:</label>
+                <input type="text" name="example" id="pv-example">
+            </div>
+
+            <div class=" field ">
+
+                <label for="tense">Tense:</label>
+                <select name="tense" id="pv-tense">
+                    <option value="present-simple">Present Simple</option>
+                    <option value="present-continous">Present Continous</option>
+                    <option value="past-simple">Past Simple</option>
+                    <option value="past-continous">Past Continous</option>
+                    <option value="present-perfect">Present Perfect</option>
+                    <option value="present-perfect-continous">Present Perfect Continous</option>
+                    <option value="past-perfect">Past Perfect</option>
+                    <option value="past-perfect-continous">Past Perfect Continous</option>
+                    <option value="future-will">Future with will</option>
+                    <option value="future-going-to">Future with going to</option>
+                    <option value="future-continous">Future Continous</option>
+                    <option value="future-perfect">Future Perfect</option>
+                    <option value="simple-conditional">Simple Conditional</option>
+                    <option value="continous-conditional">Continous Conditional</option>
+                    <option value="perfect-conditional">Perfect Conditional</option>
+                    <option value="perfect-continous-conditional">Perfect Future Continous</option>
+                </select>
+
+            </div>
+            <div class="field">
+                <label for="question">Question:</label>
+                <input type="text" name="question" id="pv-question">
+            </div>
+            <div class="field">
+                <label for="answer">Answer:</label>
+                <input type="text" name="answer" id="pv-answer">
+            </div>
+            <div class="field">
+                <button id="add-phrasal-verb-btn">Submit</button>
+            </div>
+
+        </form>
 
 
-            <label for="level">Level<label>
-        <select name=" level " id="class-level">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-      </div>
-
-      <div class=" field ">
-        <label for=" grammar-point ">Grammar Point: </label>
-            <select name=" grammar-point " id="class-grammar-point">
-        <option value="present-simple">Present Simple</option>
-        <option value="present-continous">Present Continous</option>
-        <option value="past-simple">Past Simple</option>
-        <option value="past-continous">Past Continous</option>
-        <option value="present-perfect">Present Perfect</option>
-        <option value="present-perfect-continous">Present Perfect Continous</option>
-        <option value="past-perfect">Past Perfect</option>
-        <option value="past-perfect-continous">Past Perfect Continous</option>
-        <option value="future-will">Future with will</option>
-        <option value="future-going-to">Future with going to</option>
-        <option value="future-continous">Future Continous</option>
-        <option value="future-perfect">Future Perfect</option>
-        <option value="simple-conditional">Simple Conditional</option>
-        <option value="continous-conditional">Continous Conditional</option>
-        <option value="perfect-conditional">Perfect Conditional</option>
-        <option value="perfect-continous-conditional">Perfect Future Continous</option>
-        </select>
-        </div>
-
-        <div class="field">
-            <label for="question">Question:</label>
-            <ol id="queslist">
-                <li>dfasd</li>
-            </ol>
-        </div>
     </div>
 
-    <script src=" script.js " async defer></script>
+    <!-- ********************Vocabulary************************************** -->
+    <div class="container vocab-container">
+        <form action="" class="insert">
+            <h3>Vocabulary</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="vocab-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="vocab">Word:</label>
+                <input type="text" id="vocab-input">
+            </div>
+
+            <div class="field">
+                <label for="translation">Translation:</label>
+                <input type="text" name="translation" id="word-translation">
+            </div>
+            <div class="field">
+                <button id="add-vocab-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- ********************Translation************************************** -->
+    <div class="container translation-container">
+        <form action="" class="insert">
+            <h3>Translation</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="translation-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-translation-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ********************Expressions************************************** -->
+    <div class="container expression-container">
+        <form action="" class="insert">
+            <h3>Expressions</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="expressions-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-expressions-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- *******************Mini-Presentation************************************** -->
+    <div class="container mini-presentation-container">
+        <form action="" class="insert">
+            <h3>Mini Presentation</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="mini-presentation-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-mini-presentation-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ********************Verbs************************************** -->
+    <div class="container verb-container">
+        <form action="" class="insert">
+            <h3>Verbs</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="verbs-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-verbs-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ********************Articles************************************** -->
+    <div class="container article-container">
+        <form action="" class="insert">
+            <h3>Articles</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="articles-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-article-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ********************Pictures************************************** -->
+    <div class="container picture-container">
+        <form action="" class="insert">
+            <h3>Pictures</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="pictures-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-translation-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ********************Pronunciation************************************** -->
+    <div class="container pronunciation-container">
+        <form action="" class="insert">
+            <h3>Pronunciation</h3>
+            <div class="field">
+                <label for="level">Level: </label>
+                <select name="level" id="pronunciation-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="field">
+
+            </div>
+            <div class="field">
+                <button id="add-translation-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- ********************Lesson Plan************************************** -->
+    <h1>Lesson Plan</h1>
+    <div class="lesson-plan-container container-insert">
+        <form action="" class="insert field">
+            <div class="section info field">
+                <h2>Lesson Plan</h2>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="lesson-date-input">
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="lesson-time-input">
+                <label for="length">Length:</label>
+                <input type="email" name="length" id="lesson-length-input">
+                <label for="teacher">Teacher:</label>
+                <select name="teacher-select" id="lesson-teacher-select">
+                    <option value="Padraic-Doyle">Padraic Doyle</option>
+                    <option value="Beatrice-Bartus">Beatrice Bartus</option>
+                </select>
+                <label for="level">Level:</label>
+                <select name="level" id="lesson-level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <button id='generate-lesson-btn'>Generate Lesson</button>
+            </div>
+
+            <div class="section lesson-grammar-point field" id='gp-lesson'>
+                <h2>Grammar Point</h2>
+
+            </div>
+
+            <div class="section lesson-phrasal-verb field" id='pv-question'>
+                <h2>Phrasal Verb</h2>
+
+            </div>
+    </div>
+    </form>
+
+
+    <a href="lesson.html">Lesson Plan</a>
+
+    <script src=" script.js " type="module" async defer></script>
 </body>
 
 </html>

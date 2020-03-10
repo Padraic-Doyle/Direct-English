@@ -1,17 +1,40 @@
 const grammarPoint = document.getElementById("grammar-point");
-const level = document.getElementById("level");
+// const level = document.getElementById("level");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
-const submitBtn = document.getElementById("submit-btn");
+const addGrammarPointBtn = document.getElementById("submit-btn");
 const classLevel = document.getElementById("class-level");
 const classGrammarPoint = document.getElementById("class-grammar-point");
 const list = document.getElementById("queslist");
+const addPhrasalVerbBtn = document.getElementById('add-phrasal-verb-btn');
+const pvLevel = document.getElementById('pv-level');
+const phrasalVerb = document.getElementById('phrasal-verb');
+const pvExample = document.getElementById('pv-example');
+const pvTense = document.getElementById('pv-tense');
+const pvQuestion = document.getElementById('pv-question');
+const lessonLevel = document.getElementById('lesson-level');
+const generateLessonBtn = document.getElementById('generate-lesson-btn');
+const lessonGP = document.getElementById('gp-lesson');
+const lessonPV = document.getElementById('pv-question');
 
-console.log(classLevel);
 
-let gpDB = [];
-// add data function
-function addData(e) {
+
+
+
+
+let gpDB = [{
+    name: 'poi'
+}];
+
+export default function send() {
+    console.log('send function');
+}
+
+
+let phrasalVerbDB = [];
+
+// add Grammar Point function
+function addGrammarPoint(e) {
     e.preventDefault();
 
     // const point = grammarPoint.value;
@@ -21,12 +44,28 @@ function addData(e) {
 
     const newGrammarPoint = {
         grammarPoint: grammarPoint.value,
-        level: level.value,
+        level: classLevel.value,
         ques: question.value,
         ans: answer.value
     };
     gpDB.push(newGrammarPoint);
     console.log(gpDB);
+
+}
+
+// add Phrasal Verb Fundtion
+function addPhrasalVerb(e) {
+    e.preventDefault();
+
+    const newPhrasalVerb = {
+        phrasalVerb: phrasalVerb.value,
+        level: pvLevel.value,
+        example: pvExample.value,
+        question: pvQuestion.value,
+        tense: pvTense.value
+    }
+    phrasalVerbDB.push(newPhrasalVerb);
+    console.log(phrasalVerbDB);
 }
 
 // call database(array) and populate question list
@@ -45,7 +84,45 @@ function lesson() {
         }
     });
 }
+//Generate Lesson
+function generateLesson(e) {
+    e.preventDefault();
+
+    const level = lessonLevel.value;
+
+    phrasalVerbDB.forEach(item => {
+        if (item.level == level) {
+
+            const pvEl = document.createElement('p');
+
+            pvEl.innerHTML = phrasalVerbDB[0].question;
+
+
+            lessonPV.appendChild(pvEl);
+
+        }
+    });
+
+
+    gpDB.forEach(item => {
+        if (item.level == level) {
+            const gpEl = document.createElement('p');
+
+            gpEl.innerHTML = item.ques;
+
+            lessonGP.appendChild(gpEl);
+
+
+
+        }
+    });
+
+
+}
+
 
 //Event Listeners
-submitBtn.addEventListener("click", addData);
+addPhrasalVerbBtn.addEventListener('click', addPhrasalVerb);
+addGrammarPointBtn.addEventListener("click", addGrammarPoint);
 classLevel.addEventListener("change", lesson);
+generateLessonBtn.addEventListener('click', generateLesson);
