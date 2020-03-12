@@ -36,3 +36,19 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
+/* lesson plan */
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-plan-container {
+    height: 1000px;
+}
+
+input {
+    width: 70%;
+}
